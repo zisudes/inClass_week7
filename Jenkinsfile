@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/zisudes/inClass_week7.git'
+                git branch: 'main', url: 'https://github.com/zisudes/inClass_week7.git'
             }
         }
         stage('Build') {
